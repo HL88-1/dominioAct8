@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas Web (Act 8 Pruebas)</title>
+    
+    <link rel="icon" href="Img/favicon.png">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .nav-menu {
+            margin-top: 15px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: 'Inter', sans-serif;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <img src="Img/logo.png" alt="" class="logo-img">
+            <h1>Exoplanetas posiblemente habitables para la raza humana</h1>
+            
+            <nav class="nav-menu">
+                <div class="dropdown">
+                    <button class="dropbtn">Menú de Navegación ▼</button>
+                    <div class="dropdown-content">
+                        <a href="#slideshow">Ver Imágenes</a>
+                        <a href="https://www.nasa.gov" target="_blank">Datos otorgados por la NASA</a>
+                        <a href="https://www.nationalgeographic.com.es/ciencia/sistema-solar-que-es-como-se-formo-y-datos-principales_18430">Datos del sistema solar</a>
+                        <a href="https://es.wikipedia.org/wiki/Anexo:Planetas_extrasolares_potencialmente_habitables">Anexo de Exoplanetas</a>
+                    </div>
+                </div>
+            </nav>
+            </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="card">
+            <h2>Módulos de control (Si dejan de Girar, algo malo sucedió)</h2>
+            <div class="grid-animaciones">
+                <div class="heptagono rotar"></div>
+                <div class="heptagono rotar"></div>
+                <div class="heptagono rotar"></div>
+                <div class="heptagono rotar"></div>   
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Mundos lejanos similares a la tierra</h2>
+            <div class="table-wrapper">
+                <table class="tabla-profesional">
+                    <thead>
+                        <tr>
+                            <th>Denominación</th>
+                            <th>Nombre</th>
+                            <th>Ubicación actual</th>
+                            <th>Viable o inviable</th>
+                            <th>Anotaciones adicionales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sujeto 1</td>
+                            <td>Marte</td>
+                            <td>225 millones de kilómetros</td>
+                            <td><span class="status online">Viable</span></td>
+                            <td>Temperatura de de -153°C a 20°C y una atmosfera debil</td>
+                        </tr>
+                        <tr>
+                            <td>Sujeto 2</td>
+                            <td>Venus</td>
+                            <td>261 000 000 de kilómetros</td>
+                            <td><span class="status offline">Inviable</span></td>
+                            <td>Temperatura de 460 °C a 470 °C</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Sujeto 1</td>
+                            <td>55 Cancri E</td>
+                            <td> 40 años luz de distancia</td>
+                            <td><span class="status offline">Inviable</span></td>
+                            <td>Temperatura de 2000 °C con oceanos de lava</td>
+                        </tr>
+                        <tr>
+                            <td>Sujeto 2</td>
+                            <td>Trappist 1e</td>
+                            <td>40 años luz de distancia</td>
+                            <td><span class="status offline">Inviable</span></td>
+                            <td>Temperatura de 460 °C a 470 °C</td>
+                        </tr>
+                         <tr>
+                            <td>Sujeto 2</td>
+                            <td>Kepler-442b</td>
+                            <td>1.200 años luz de distancia</td>
+                            <td><span class="status offline">Inviable</span></td>
+                            <td>Temperatura de 460 °C a 470 °C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+<section id="slideshow">
+    <div class="slide-wrapper">
+        <div class="img-container">
+            <img src="Img/Mars.jpg" alt="Marte" class="slide-img">
+            <h1 class="number"></h1>
+        </div>
+        <div class="img-container">
+            <img src="Img/venuswithnoatmosphere.jfif" alt="Venus" class="slide-img">
+            <h1 class="number"></h1>
+        </div>
+        <div class="img-container">
+            <img src="Img/Trappist 1e.jfif" alt="Trappist 1e" class="slide-img">
+            <h1 class="number"></h1>
+        </div>
+        <div class="img-container">
+            <img src="Img/Kepler442b(comp).jpg" alt="Kepler 442b" class="slide-img">
+            <h1 class="number"></h1>
+        </div>
+    </div>
+</section>
+        
+
+        <div class="grid-layout">
+            <section class="card">
+                <h2>Observaciones Generales de los exoplanetas</h2>
+                <p class="subtitulo"></p>
+                <div class="block">Marte es el unico mundo viable para la visita de la humanidad en un futuro algo lejano</div>
+                <div class="inline-block">Posee un ciclo de días marcado en 24.6 horas, estaciones, 
+                                        agua congelada y un potencial de recursos (como el oxígeno y multiples combustiblescombustible)</div>
+                <div class="inline-block"> La atmósfera es extremadamente fina y bastante fría (llegando incluso hasta los -143 Grados celcius)</div>
+            </section>
+
+            <section class="card">
+                <h2>Notas Adicionales</h2>
+                <p class="subtitulo"></p>
+                <div class="block">Un viaje entre la Tierra y Marte tardaría entre 4 y 12 meses, dependiendo de la posición de ambos planetas en sus órbitas, así que si algo sale mal, 
+                                            estarías prácticamente solo. Incluso una señal de radio puede tardar hasta 20 minutos en llegar.</div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+</body>
+</html>
